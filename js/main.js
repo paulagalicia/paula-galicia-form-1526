@@ -33,7 +33,7 @@ function validateForm(event) {
           errors.push("Invalid email address.");
         }
       } else {
-        alert("Enter your email!");
+        alert("Enter your email.");
         errors.push("Email address is required.");
       }
 
