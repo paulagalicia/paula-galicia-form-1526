@@ -3,7 +3,7 @@ const form = document.getElementById('form');
 const submitButton = document.getElementById("submit-button");
 const fullNameInput = document.getElementById("fullname");
 const emailInput = document.getElementById("email");
-const messageTextarea = document.getElementById("message");
+const messageTextarea = document.getElementById("msg");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
