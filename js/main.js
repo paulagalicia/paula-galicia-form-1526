@@ -21,7 +21,7 @@ function validateForm(event) {
     if (fullNameValue !== "") {
         formData.fullname = fullNameValue;
     } else {
-        alert("Please enter your full name!");
+        alert("Enter your full name.");
         errors.push("Full name is required.");
     }
 
@@ -29,25 +29,25 @@ function validateForm(event) {
         if (emailRegex.test(emailValue)) {
           formData.email = emailValue;
         } else {
-          alert("Please enter a valid email!");
+          alert("Enter a valid email!");
           errors.push("Invalid email address.");
         }
       } else {
-        alert("Please enter your email!");
+        alert("Enter your email!");
         errors.push("Email address is required.");
       }
 
       if (messageValue !== "") {
         formData.message = messageValue;
       } else {
-        alert("Please enter your message!");
+        alert("Enter your message.");
         errors.push("Message is required.");
       }
 
       if (errors.length > 0) {
         console.error("Form submission failed:", errors);
       } else {
-        alert("Form submitted successfully!");
+        alert("Form submitted successfully.");
         console.log("Form submitted successfully:", formData);
         fullNameInput.value = "";
         emailInput.value = "";
