@@ -29,7 +29,7 @@ function validateForm(event) {
         if (emailRegex.test(emailValue)) {
           formData.email = emailValue;
         } else {
-          alert("Enter a valid email!");
+          alert("Enter a valid email.");
           errors.push("Invalid email address.");
         }
       } else {
